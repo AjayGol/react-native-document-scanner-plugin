@@ -40,7 +40,7 @@
     "typecheck": "tsc",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
-    "build": "bob build",
+    "build": "node api.js && bob build",
     "build:expo-plugin": "expo-module build --build ./expo-plugin",
     "release": "release-it --only-version"
   },
